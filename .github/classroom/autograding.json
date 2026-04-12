@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "name": "Task A (23): 3-alpha sensitivity",
+      "setup": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+      "run": "python -m unittest discover -s lab1_core/tests -p \"test_task_a.py\" -v",
+      "timeout": 10,
+      "points": 23
+    },
+    {
+      "name": "Task B (24): trapezoid vs Simpson + Debye",
+      "setup": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+      "run": "python -m unittest discover -s lab1_core/tests -p \"test_task_b.py\" -v",
+      "timeout": 10,
+      "points": 24
+    },
+    {
+      "name": "Task C (23): ring potential field",
+      "setup": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+      "run": "python -m unittest discover -s lab1_core/tests -p \"test_task_c.py\" -v",
+      "timeout": 10,
+      "points": 23
+    },
+    {
+      "name": "Bonus (30): plate gravity (non-blocking in workflow)",
+      "setup": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+      "run": "python -m unittest discover -s lab2_bonus/tests -p \"test_bonus.py\" -v",
+      "timeout": 10,
+      "points": 30
+    }
+  ],
+  "protected_files": [
+    ".github/workflows/classroom.yml",
+    "lab1_core/tests/test_task_a.py",
+    "lab1_core/tests/test_task_b.py",
+    "lab1_core/tests/test_task_c.py",
+    "lab2_bonus/tests/test_bonus.py"
+  ]
+}
